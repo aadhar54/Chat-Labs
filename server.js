@@ -89,10 +89,11 @@ io.on('connection',(socket)=>{
     
    
 })
+const PORT = process.env.PORT || 5555
 
 app.use('/',express.static(__dirname+'/public'))
 
 
-server.listen(5555,()=>{
-    console.log('server started at http://localhost:5555')
+server.listen(PORT,()=>{
+    console.log(`server started at http://localhost:${PORT}`)
 })
