@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHATLAB⚡</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.js"></script>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+                <h1>CHAT-⚡-LABS</h1>
+                <a href="index.html" class="btn">Leave Room</a>
+        </header>
+        <main id="chat-main">
+            <div id="chat-sidebar">
+                <h2>Room Name:</h2>
+                <p id="room-name"></p>
+                <h2>Users:</h2>
+                <ul id="users"></ul>
+            </div>
+
+            <div id="chat-cont"></div>
+        </main>
+
+        <div id="chat-form-cont">
+            <form id="chat-form">
+                <input id="inpSendChat"type="text" placeholder="Enter Message"
+                required
+                autocomplete="off">
+                <button id="btn-send-chat">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
